@@ -1,0 +1,145 @@
+.pandora-notice {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.pandora-notice h3 {
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+.pandora-notice p {
+  margin: 5px 0;
+  color: #6c757d;
+}
+
+.pandora-notice a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pandora-notice a:hover {
+  text-decoration: underline;
+}
+
+.music-page h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.playlist {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.playlist h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.song-item:hover {
+  background: #f8f9fa;
+  border-color: #3498db;
+}
+
+.song-item.active {
+  background: #e3f2fd;
+  border-color: #3498db;
+}
+
+.song-info h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.song-info p {
+  margin: 5px 0 0 0;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.play-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.play-btn:hover {
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.player {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.now-playing {
+  flex: 1;
+}
+
+.now-playing h3 {
+  margin: 0 0 5px 0;
+  color: #34495e;
+  font-size: 14px;
+}
+
+.now-playing p {
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.play-pause-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.play-pause-btn:hover {
+  background: #2980b9;
+}

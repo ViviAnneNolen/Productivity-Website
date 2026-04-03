@@ -1,0 +1,214 @@
+.schedule-page {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.schedule-header {
+  margin-bottom: 30px;
+}
+
+.schedule-header h1 {
+  font-size: 2.2em;
+  margin: 0 0 20px 0;
+  background: var(--rainbow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.add-schedule-form {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(168, 224, 255, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.add-schedule-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.schedule-input {
+  flex: 2;
+  padding: 12px 15px;
+  border: 2px solid rgba(168, 224, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 1em;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.schedule-datetime {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid rgba(168, 224, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.schedule-input:focus,
+.schedule-datetime:focus {
+  outline: none;
+  border-color: #7b5eff;
+  background: rgba(123, 94, 255, 0.1);
+}
+
+.add-btn {
+  padding: 12px 30px;
+  background: var(--rainbow);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(168, 224, 255, 0.3);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(168, 224, 255, 0.25);
+  color: #666;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  border-color: #a1c4fd;
+  color: #a1c4fd;
+}
+
+.filter-btn.active {
+  background: var(--rainbow);
+  border-color: transparent;
+  color: white;
+}
+
+.schedule-list {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(168, 224, 255, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.schedule-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-left: 4px solid #a1c4fd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.schedule-item:hover {
+  background: rgba(168, 224, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.schedule-item.done {
+  opacity: 0.6;
+  border-left-color: #b8f1ff;
+  background: rgba(184, 241, 255, 0.05);
+}
+
+.schedule-item.done .item-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.schedule-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.checkbox-btn {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  padding: 0;
+  border: 2px solid #a1c4fd;
+  border-radius: 6px;
+  background: transparent;
+  color: #a1c4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+.checkbox-btn:hover {
+  border-color: #b8f1ff;
+}
+
+.item-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-datetime {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #c0392b;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #e74c3c;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+}
+
+.empty-state .emoji {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}

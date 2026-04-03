@@ -1,0 +1,160 @@
+.braindump-page {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.braindump-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.braindump-header h1 {
+  font-size: 2.2em;
+  margin: 0 0 10px 0;
+  background: var(--rainbow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.braindump-container {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--rainbow-border);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.braindump-textarea-wrapper {
+  margin-bottom: 20px;
+}
+
+.braindump-textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+  border: 2px solid rgba(255, 154, 158, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.6;
+  resize: vertical;
+  transition: all 0.3s;
+}
+
+.braindump-textarea:focus {
+  outline: none;
+  border-color: #ff9a9e;
+  background: rgba(255, 154, 158, 0.05);
+}
+
+.braindump-textarea::placeholder {
+  color: #aaa;
+}
+
+.braindump-stats {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.8em;
+  font-weight: bold;
+  background: var(--rainbow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.braindump-tips {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--rainbow-border);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.braindump-tips h2 {
+  margin: 0 0 20px 0;
+  color: #ff9a9e;
+  font-size: 1.3em;
+}
+
+.braindump-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.braindump-tips li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+  color: #333;
+  line-height: 1.7;
+  border-bottom: 1px solid rgba(255, 154, 158, 0.15);
+}
+
+.braindump-tips li:last-child {
+  border-bottom: none;
+}
+
+.braindump-tips li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff9a9e;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .braindump-header h1 {
+    font-size: 1.6em;
+  }
+
+  .braindump-container {
+    padding: 20px;
+  }
+
+  .braindump-textarea {
+    min-height: 200px;
+  }
+
+  .braindump-stats {
+    flex-direction: column;
+  }
+
+  .braindump-tips {
+    padding: 20px;
+  }
+}

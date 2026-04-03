@@ -1,0 +1,131 @@
+.focus-page {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.focus-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.focus-header h1 {
+  font-size: 2.2em;
+  margin: 0 0 10px 0;
+  background: var(--rainbow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.focus-form {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--rainbow-border);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.focus-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 20px;
+  border: 2px solid rgba(255, 154, 158, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  font-family: inherit;
+  font-size: 1.1em;
+  resize: vertical;
+  transition: all 0.3s;
+}
+
+.focus-textarea:focus {
+  outline: none;
+  border-color: #ff9a9e;
+  background: rgba(255, 154, 158, 0.05);
+}
+
+.focus-textarea::placeholder {
+  color: #aaa;
+}
+
+.focus-preview {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 154, 158, 0.08);
+  border: 2px solid var(--rainbow-border);
+  border-radius: 8px;
+  border-left: 4px solid #ff9a9e;
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.05em;
+}
+
+.focus-tips {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--rainbow-border);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.focus-tips h2 {
+  margin: 0 0 20px 0;
+  color: #ff9a9e;
+  font-size: 1.3em;
+}
+
+.focus-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.focus-tips li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+  color: #333;
+  line-height: 1.7;
+  border-bottom: 1px solid rgba(255, 154, 158, 0.15);
+}
+
+.focus-tips li:last-child {
+  border-bottom: none;
+}
+
+.focus-tips li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #ff9a9e;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .focus-header h1 {
+    font-size: 1.6em;
+  }
+
+  .focus-form {
+    padding: 20px;
+  }
+
+  .focus-tips {
+    padding: 20px;
+  }
+
+  .focus-textarea {
+    min-height: 150px;
+  }
+}
